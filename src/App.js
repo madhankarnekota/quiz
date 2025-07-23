@@ -7,7 +7,7 @@ const App = () => {
   let tempMarks=[]
   const [marks,setMarks]= useState([]);
   const changeHandler= (value,index)=>{
-    tempMarks= marks;
+    tempMarks = [...marks];
     tempMarks[index]=value;
     setMarks([...tempMarks]); 
   }
